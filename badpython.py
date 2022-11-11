@@ -1,4 +1,4 @@
-print("this is" bad)
+print("this is")
 def bad():
   print("not good")
  print("bad")
