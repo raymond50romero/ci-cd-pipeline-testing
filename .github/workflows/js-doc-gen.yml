@@ -1,0 +1,2 @@
+npm install -g jsdoc
+jsdoc jstest.js
