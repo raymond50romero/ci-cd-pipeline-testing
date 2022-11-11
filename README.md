@@ -1,3 +1,5 @@
 # ci-cd-pipeline-testing
 
-doc generation source: https://github.com/vargiuscuola/shdoc.git
+docsh: https://github.com/vargiuscuola/shdoc.git
+
+docjs: https://github.com/jsdoc/jsdoc.git
