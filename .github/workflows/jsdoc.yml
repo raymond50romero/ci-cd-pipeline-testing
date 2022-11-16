@@ -1,8 +1,6 @@
 name: jsdoc
 on:
  push:
-   branches:
-     - master
 
 jobs:
   publish:
