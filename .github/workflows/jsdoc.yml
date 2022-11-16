@@ -13,7 +13,7 @@ jobs:
     - name: Build
       uses: codevise/documentation-js-action@v1
       with:
-        input: ./src
+        input: ./*
         output: ./docs
 
     # For example:
