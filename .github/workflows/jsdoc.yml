@@ -4,22 +4,21 @@ on:
    
 
 jobs:
-  publish:
+  generate-jsdoc:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g jsdoc
+      - run: jsdoc ./testOurCode.js
 
-    - name: Build
-      uses: codevise/documentation-js-action@v1
-      with:
-        input: ./src
-        output: ./docs
 
-    # For example:
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_PAT }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./docs
+#     # For example:
+#     - name: Deploy
+#       uses: peaceiris/actions-gh-pages@v2
+#       env:
+#         PERSONAL_TOKEN: ${{ secrets.GITHUB_PAT }}
+#         PUBLISH_BRANCH: gh-pages
+#         PUBLISH_DIR: ./docs
