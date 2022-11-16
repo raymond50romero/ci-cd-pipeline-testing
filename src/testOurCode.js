@@ -1,7 +1,7 @@
 //choresListAPI.js
 
 /**
- * Reads 'ChoresListData' data from local storage 
+ * Reads 'ChoresListData' data from local storage , test
  * and returns a JSON with all the chores information
  * found. If nothing in local storage returns JSON with
  * initialized fields
