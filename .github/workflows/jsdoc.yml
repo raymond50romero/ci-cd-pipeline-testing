@@ -3,7 +3,7 @@ on:
  push:
 
 jobs:
-  publish:
+  doc:
     runs-on: ubuntu-latest
 
     steps:
@@ -12,8 +12,8 @@ jobs:
     - name: Build
       uses: codevise/documentation-js-action@v1
       with:
-        input: .
-        output: .
+        input: ./src
+        output: ./out
 
   build-and-deploy:
       concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
@@ -30,4 +30,4 @@ jobs:
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4
           with:
-            folder: .
+            folder: ./out
