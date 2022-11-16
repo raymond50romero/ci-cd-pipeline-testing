@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g jsdoc
-      - run: jsdoc ./testOurCode.js
+      - run: jsdoc ./testOurCode.js -d ./docs
 
 
 #     # For example:
