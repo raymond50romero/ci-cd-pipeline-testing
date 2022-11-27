@@ -37,6 +37,7 @@ plugins:
 
 extends: 
   - prettier 
+  - standard
   
 #########
 # Rules #
