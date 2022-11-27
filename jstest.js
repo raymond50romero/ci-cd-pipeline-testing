@@ -8,7 +8,6 @@
  *         description: All users were returned.
  */
 function msg() {
-  
   /* comment */
   alert("Hello Javatpoint");
 }
